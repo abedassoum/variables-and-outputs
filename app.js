@@ -35,8 +35,8 @@ function displayNumber() {
         message = message + ", it is above 10";
     } else if (number === 10) {
         message = "tallet er 10";
-    } else {
-        message = message + ", it is below 10";
+    } else if (number < 0) {
+      message = message + ", it is below 0";
     }
     console.log(message);
     document.querySelector("#message").textContent = message;
